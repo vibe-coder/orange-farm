@@ -6,14 +6,14 @@ import Sidebar from "./sidebar/sidebar";
 
 export default function Home() {
   return (
-    <div className="bg-offwhite text-black">
-      <main className="h pl-4 pt-4">
+    <div className="bg-offwhite text-black h-lvh overflow-hidden">
+      <main className="pl-4 py-4 h-full">
         
-        <div className="mb-2">
+        <div className="h-full overflow-scroll">
           <Sidebar/>
         </div>
-        <Footer/>
       </main>
+      {/* <Footer/> */}
     </div>
   );
 }
