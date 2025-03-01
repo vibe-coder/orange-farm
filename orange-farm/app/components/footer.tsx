@@ -3,8 +3,10 @@
 
 export default function Footer() {
     return(
-        <div className=" p-2 bg-black text-white mr-4">
-            This is footer
+        <div className="bg-black pb-2 fixed bottom-0 w-full flex justify-center item-center text-white">
+            <p>
+                This is a footer
+            </p>
         </div>
     )
 }
