@@ -10,7 +10,7 @@ export default function Home() {
     <div className="bg-offwhite text-black w-full h-lvh overflow-hidden">
       <main className="pl-4 py-4 h-full">
         
-        <div className="h-full overflow-scroll flex gap-4 w-[200%]">
+        <div className="h-full overflow-scroll flex gap-4 ">
           <div className=" overflow-scroll w-82 flex-none">
             <Sidebar/>
           </div>
