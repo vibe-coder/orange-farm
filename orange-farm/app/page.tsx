@@ -1,16 +1,23 @@
 import Footer from "./components/footer";
 import Sidebar from "./sidebar/sidebar";
+import Dashboard from "./dashboard/page";
 
 
 
 
 export default function Home() {
   return (
-    <div className="bg-offwhite text-black h-lvh overflow-hidden">
+    <div className="bg-offwhite text-black w-full h-lvh overflow-hidden">
       <main className="pl-4 py-4 h-full">
         
-        <div className="h-full overflow-scroll">
-          <Sidebar/>
+        <div className="h-full overflow-scroll flex gap-4 w-[200%]">
+          <div className=" overflow-scroll w-82 flex-none">
+            <Sidebar/>
+          </div>
+
+          <div className="overflow-scroll w-full flex-none ">
+            <Dashboard/>
+          </div>
         </div>
       </main>
       {/* <Footer/> */}
