@@ -10,10 +10,9 @@ import logout from "../../public/icons/logout.svg"
 
 
 
-
 export default function Sidebar() {
   return (
-    <div className="bg-white  w-[90%] rounded-2xl p-6">
+    <div className="bg-white w-90 flex-none rounded-2xl p-6 flex-1">
       <div>
         
         {/* Brand logo */}
