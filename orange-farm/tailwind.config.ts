@@ -16,7 +16,7 @@ export default {
         textblack: "131313",
         lightorange: "#FFF7E8",
         lightgray: "#F1F1F1",
-        darkgray: "#F1F1F1",
+        darkgray: "#454545",
         lightgreen: "#25CD25",
         red: "#EB5050",
         midorange: "#FFCD71",
