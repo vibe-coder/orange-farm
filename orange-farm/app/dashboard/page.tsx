@@ -3,6 +3,7 @@ import greenIcon from "../../public/icons/Vector.svg"
 import darkorangearrow from "../../public/icons/darkorangearrow.svg"
 import Revenues from "../components/revenues"
 import Lostdeals from "../components/lost"
+import Quartergoals from "../components/quarter"
 
 
 export default function Dashboard(){
@@ -10,13 +11,10 @@ export default function Dashboard(){
         <div className="h-screen w-full">
 
             {/* ------------ Top ------------ */}
-            <div className="flex-col h-screen space-y-4 gap-4">
-                {/* Revenues */}
+            <div className="grid grid-cols-2 grid-rows-2 h-screen space-y-4 gap-4">
                 <Revenues/>
                 <Lostdeals/>
-                
-
-                {/* Lost deals */}
+                <Quartergoals/>
             </div>
 
             {/* ------------ Middele ------------ */}
