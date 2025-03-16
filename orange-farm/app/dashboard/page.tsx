@@ -11,7 +11,7 @@ export default function Dashboard(){
         <div className="h-screen w-full">
 
             {/* ------------ Top ------------ */}
-            <div className="grid grid-cols-2 grid-rows-2 h-screen space-y-4 gap-4">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4">
                 <Revenues/>
                 <Lostdeals/>
                 <Quartergoals/>
