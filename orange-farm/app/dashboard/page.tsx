@@ -4,6 +4,7 @@ import darkorangearrow from "../../public/icons/darkorangearrow.svg"
 import Revenues from "../components/revenues"
 import Lostdeals from "../components/lost"
 import Quartergoals from "../components/quarter"
+import Customers from "../components/customer"
 
 
 export default function Dashboard(){
@@ -18,8 +19,8 @@ export default function Dashboard(){
             </div>
 
             {/* ------------ Middele ------------ */}
-            <div>
-                {/* This is for middle */}
+            <div className="pt-4">
+                <Customers/>
             </div>
 
             {/* ------------ Bottom ------------ */}
