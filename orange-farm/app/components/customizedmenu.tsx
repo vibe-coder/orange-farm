@@ -68,12 +68,11 @@ const StyledMenu = styled((props: MenuProps) => (
           aria-controls={open ? 'demo-customized-menu' : undefined}
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
-          variant="contained"
           disableElevation
           onClick={handleClick}
           endIcon={<KeyboardArrowDownIcon />}
         >
-          Options
+          Sort by
         </Button>
         <StyledMenu
           id="demo-customized-menu"
@@ -85,17 +84,10 @@ const StyledMenu = styled((props: MenuProps) => (
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose} disableRipple>
-            Edit
+            Newest
           </MenuItem>
           <MenuItem onClick={handleClose} disableRipple>
-            Duplicate
-          </MenuItem>
-          <Divider sx={{ my: 0.5 }} />
-          <MenuItem onClick={handleClose} disableRipple>
-            Archive
-          </MenuItem>
-          <MenuItem onClick={handleClose} disableRipple>
-            More
+            Oldest
           </MenuItem>
         </StyledMenu>
       </div>
