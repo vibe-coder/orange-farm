@@ -1,9 +1,5 @@
 
 
-
-
-
-
 interface Profile {
     profilePictureURL: string,
     name: string,
@@ -13,23 +9,23 @@ interface Profile {
 
 const customerData: Profile[]  = [
     {
-        profilePictureURL: 'unknown',
+        profilePictureURL: '/icons/Chris.png',
         name: 'Christ Friedkly',
         company: 'Supermarket Villanova'
     },
 
     {
-        profilePictureURL: 'unknown',
+        profilePictureURL: '/icons/Maggie.png',
         name: 'Maggie Johnson',
         company: 'Oasis Organic Inc.'
     },
     {
-        profilePictureURL: 'unknown',
+        profilePictureURL: '/icons/Harry.png',
         name: 'Gael Harry',
         company: 'Newyork Finest Fruits'
     },
     {
-        profilePictureURL: 'unkknown',
+        profilePictureURL: '/icons/Jenna.png',
         name: 'Jenna Sullivan',
         company: 'Wallmart'
     }
