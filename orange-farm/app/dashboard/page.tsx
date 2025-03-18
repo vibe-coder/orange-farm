@@ -5,6 +5,7 @@ import Revenues from "../components/revenues"
 import Lostdeals from "../components/lost"
 import Quartergoals from "../components/quarter"
 import Customers from "../components/customer"
+import Growth from "../components/growth"
 
 
 export default function Dashboard(){
@@ -19,8 +20,9 @@ export default function Dashboard(){
             </div>
 
             {/* ------------ Middele ------------ */}
-            <div className="pt-4">
+            <div className="pt-4 grid grid-col-2 space-y-4">
                 <Customers/>
+                <Growth/>
             </div>
 
             {/* ------------ Bottom ------------ */}
