@@ -12,9 +12,10 @@ export default function BasicArea() {
           area: true,
         },
       ]}
-      width={450}
+      width={310}
       height={300}
       grid={{ vertical: true, horizontal: true }}
+
       yAxis={[{
         colorMap: {
             type: 'continuous',
