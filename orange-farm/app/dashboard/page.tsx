@@ -6,6 +6,7 @@ import Lostdeals from "../components/lost"
 import Quartergoals from "../components/quarter"
 import Customers from "../components/customer"
 import Growth from "../components/growth"
+import Chats from "../components/chats"
 
 
 export default function Dashboard(){
@@ -26,8 +27,8 @@ export default function Dashboard(){
             </div>
 
             {/* ------------ Bottom ------------ */}
-            <div>
-                {/* This is for bottom */}
+            <div className="pt-4">
+                <Chats/>
             </div>
         </div>
     )
