@@ -43,7 +43,7 @@ const SmallAvatar = styled(Avatar)(({ theme }) => ({
   border: `2px solid ${theme.palette.background.paper}`,
 }));
 
-export default function BadgeAvatars(pictureURL:string) {
+export default function BadgeAvatars() {
   return (
     <Stack direction="row" spacing={2}>
       {
