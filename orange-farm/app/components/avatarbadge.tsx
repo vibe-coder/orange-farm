@@ -66,7 +66,7 @@ export default function BadgeAvatars() {
         customerWithNoMessage.map((data) => {
           return(
             <div className='p-4'>
-              <Avatar alt={data.name} src={data.pictureURL}/>
+              <Avatar key={data.key} alt={data.name} src={data.pictureURL}/>
             </div>
           )
         })
