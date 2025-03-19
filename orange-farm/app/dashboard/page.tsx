@@ -7,6 +7,7 @@ import Quartergoals from "../components/quarter"
 import Customers from "../components/customer"
 import Growth from "../components/growth"
 import Chats from "../components/chats"
+import TopStates from "../components/topStates"
 
 
 export default function Dashboard(){
@@ -27,8 +28,9 @@ export default function Dashboard(){
             </div>
 
             {/* ------------ Bottom ------------ */}
-            <div className="pt-4">
+            <div className="pt-4 grid gap-4 grid-col-3">
                 <Chats/>
+                <TopStates/>
             </div>
         </div>
     )
