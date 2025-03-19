@@ -1,4 +1,6 @@
+"use client"
 
+import BadgeAvatars from "./avatarbadge"
 
 
 
@@ -7,6 +9,12 @@ export default function Chats(){
         <div className="bg-white p-4">
             <h1 className="text-textblack font-bold text-lg">Chats</h1>
             <p className="text-darkgray text-sm">2 unread messages</p>
+
+            <div className="pt-8">
+                <div>
+                    <BadgeAvatars/>
+                </div>
+            </div>
         </div>
     )
 }
