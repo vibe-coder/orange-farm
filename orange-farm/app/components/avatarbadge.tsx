@@ -3,6 +3,10 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+import {customerWithMessage, customerWithNoMessage} from './chatData';
+
+
+
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -39,25 +43,34 @@ const SmallAvatar = styled(Avatar)(({ theme }) => ({
   border: `2px solid ${theme.palette.background.paper}`,
 }));
 
-export default function BadgeAvatars() {
+export default function BadgeAvatars(pictureURL:string) {
   return (
     <Stack direction="row" spacing={2}>
-      <StyledBadge
-        overlap="circular"
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        variant="dot"
-      >
-        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-      </StyledBadge>
-      <Badge
-        overlap="circular"
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-        badgeContent={
-          <SmallAvatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        }
-      >
-        <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-      </Badge>
+      {
+        customerWithMessage.map((data) => {
+          return(
+            <div key={data.key} className='bg-lightorange p-4 rounded-2xl'>
+              <StyledBadge
+                overlap="circular"
+                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+                variant="dot"
+              >
+                <Avatar alt="Maggie Johnson" src={data.pictureURL} />
+              </StyledBadge>
+        </div>
+          )
+        })
+      }
+
+      {
+        customerWithNoMessage.map((data) => {
+          return(
+            <div className='p-4'>
+              <Avatar alt={data.name} src={data.pictureURL}/>
+            </div>
+          )
+        })
+      }
     </Stack>
   );
 }
