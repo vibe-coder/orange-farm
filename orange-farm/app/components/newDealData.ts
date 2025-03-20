@@ -7,7 +7,7 @@ interface NewDeal {
 }
 
 
-const newDealData: NewDeal[] = [
+export const newDealData: NewDeal[] = [
     {
         key: 1,
         name: 'Fruit2Go'
