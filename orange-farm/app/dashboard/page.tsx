@@ -8,6 +8,7 @@ import Customers from "../components/customer"
 import Growth from "../components/growth"
 import Chats from "../components/chats"
 import TopStates from "../components/topStates"
+import NewDeal from "../components/newdeal"
 
 
 export default function Dashboard(){
@@ -31,6 +32,7 @@ export default function Dashboard(){
             <div className="pt-4 grid gap-4 grid-col-3">
                 <Chats/>
                 <TopStates/>
+                <NewDeal/>
             </div>
         </div>
     )
