@@ -7,9 +7,7 @@ import Dashboard from "./dashboard/page";
 export default function Home() {
   return (
     <div className="bg-offwhite text-black w-full h-lvh overflow-hidden">
-      <main className="pl-4 py-4 h-full">
-        
-        <div className="h-full overflow-scroll flex gap-4 ">
+      <main className="pl-4 py-4 h-full overflow-scroll flex gap-4">
           <div className=" overflow-scroll w-92 flex-none">
             <Sidebar/>
           </div>
@@ -17,7 +15,6 @@ export default function Home() {
           <div className="overflow-scroll w-full flex-none pr-4">
             <Dashboard/>
           </div>
-        </div>
       </main>
     </div>
   );
