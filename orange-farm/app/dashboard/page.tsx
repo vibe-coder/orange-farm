@@ -9,11 +9,17 @@ import Growth from "../components/growth"
 import Chats from "../components/chats"
 import TopStates from "../components/topStates"
 import NewDeal from "../components/newdeal"
+import Header from "../components/header"
 
 
 export default function Dashboard(){
     return(
         <div className="h-screen w-full">
+
+            {/* Header */}
+            <div className="mb-4">
+                <Header/>
+            </div>
 
             {/* ------------ Top ------------ */}
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
