@@ -7,16 +7,23 @@ import Data from "../components/ButtonData";
 import gustavo from "../../public/icons/Gustavo.png"
 import settings from "../../public/icons/settings.svg"
 import logout from "../../public/icons/logout.svg"
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 
 
 export default function Sidebar() {
   return (
-    <div className="bg-white w-full flex-none rounded-2xl p-6 flex-1">
+    <div className="bg-white w-full flex-none rounded-2xl p-6 flex-1 relative">
       <div>
         
         {/* Brand logo */}
-        <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40" />
+        <div className="flex justify-between items-center">
+          <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40" />
+
+          <div className="bg-offwhite rounded-l-xl absolute right-0 p-1 ">
+            <NavigateBeforeIcon/>
+          </div>
+        </div>
 
         {/* Search bar wrapper */}
         <div className="border flex px-4 py-2 mt-10 gap-2 rounded-full items-center">
