@@ -13,26 +13,25 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 export default function Sidebar() {
   return (
-    <div className="bg-white w-full flex-none rounded-2xl p-6 flex-1 relative">
-      <div>
+    <div className="bg-white h-full rounded-2xl p-6 px-14 relative">
         
         {/* Brand logo */}
         <div className="flex justify-between items-center">
-          <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40" />
+          <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40 hidden" />
 
-          <div className="bg-offwhite rounded-l-xl absolute right-0 p-1 ">
+          <div className="bg-offwhite hidden rounded-l-xl absolute right-0 p-1 ">
             <NavigateBeforeIcon/>
           </div>
         </div>
 
         {/* Search bar wrapper */}
-        <div className="border flex px-4 py-2 mt-10 gap-2 rounded-full items-center">
+        <div className="border flex px-4 py-2 mt-5 gap-2 rounded-full items-center">
           <Image src={searchicon} alt="search-icon" width={30} height={30} className="h-6 w-6" / >
           <input placeholder ="Search" className="w-full text-lg"/>
         </div>
 
         {/* Menu button wrapper */}
-        <div className="mt-10 flex-col mb-32">
+        <div className="mt-5 flex-col">
             {
               Data.map((data) =>{
                 return(
@@ -43,7 +42,7 @@ export default function Sidebar() {
         </div>
 
         {/* user wrapper */}
-        <div className="">
+        <div className="mt-20">
           {/* user info */}
           <div className="flex gap-4 mb-4">
             <div className="rouded ">
@@ -65,7 +64,7 @@ export default function Sidebar() {
               Log out
           </button>
         </div>
-      </div>
+
     </div>
   );
 } 
