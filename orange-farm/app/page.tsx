@@ -12,9 +12,12 @@ export default function Home() {
             <Sidebar/>
           </div>
 
-          <div className=" no-scrollbar w-[190%] flex">
-            <div className="w-screen overflow-y-scroll no-scrollbar z-10 p-4 bg-offwhite">
-              <Dashboard/>
+          <div className=" overflow-x-scroll  snap-center scroll-smooth snap-x 
+          no-scrollbar snap-mandatory w-[190%] flex ">
+            <div className=" z-30 w-[190%] flex justify-end">
+              <div className="w-screen no-scrollbar z-20 p-4 bg-offwhite">
+                <Dashboard/>
+              </div>
             </div>
           </div>
       </main>
