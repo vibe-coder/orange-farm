@@ -14,7 +14,7 @@ import Header from "../components/header"
 
 export default function Dashboard(){
     return(
-        <div className="h-screen w-full">
+        <div id="#" className="bg-offwhite w-full ">
 
             {/* Header */}
             <div className="mb-4">
