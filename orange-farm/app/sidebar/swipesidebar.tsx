@@ -1,7 +1,10 @@
 "use client"
 
-import { motion, useAnimation } from "framer-motion";
+import { div } from "framer-motion/client";
+
+import { motion, useAnimation, } from "framer-motion";
 import { useEffect } from "react";
+import Sidebar from "./sidebar";
 
 export default function SwipeSidebar() {
   const controls = useAnimation();
@@ -11,11 +14,11 @@ export default function SwipeSidebar() {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    const handleTouchStart = (e) => {
+    const handleTouchStart = (e:any) => {
       touchStartX = e.changedTouches[0].screenX;
     };
 
-    const handleTouchEnd = (e) => {
+    const handleTouchEnd = (e:any) => {
       touchEndX = e.changedTouches[0].screenX;
       const swipeDistance = touchStartX - touchEndX;
 
@@ -42,14 +45,45 @@ export default function SwipeSidebar() {
 
   return (
     <motion.div
-      className="fixed top-0 right-0 h-full w-64 bg-gray-800 text-white p-4 z-50"
+      className="fixed h-full top-0 right-0 w-full bg-white p-4 z-50"
       variants={sidebarVariants}
       initial="closed"
       animate={controls}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      <h2 className="text-xl font-bold mb-4">Sidebar</h2>
-      <p>This sidebar slides in when you swipe left 👈</p>
+      <Sidebar/>
     </motion.div>
   );
 }
+
+
+
+
+// import Image from "next/image";
+// import logo from "../icons/Logo.svg"
+// import searchicon from "../icons/search.svg"
+// import dashboardIcon from"../icons/dashboard-icon.svg"
+// import Button from "../components/button";
+// import Data from "../components/ButtonData";
+// import gustavo from "../../public/icons/Gustavo.png"
+// import settings from "../../public/icons/settings.svg"
+// import logout from "../../public/icons/logout.svg"
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+
+
+
+// export default function Sidebar() {
+//   return (
+//     <div className="bg-white h-full rounded-2xl p-6 px-14 relative">
+        
+//         {/* Brand logo */}
+//         <div className="flex justify-between items-center">
+//           <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40 hidden" />
+
+//           <div className="bg-offwhite hidden rounded-l-xl absolute right-0 p-1 ">
+//             <NavigateBeforeIcon/>
+//           </div>
+//         </div>
+//     </div>
+//   );
+// } 
