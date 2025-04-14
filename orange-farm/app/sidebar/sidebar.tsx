@@ -13,7 +13,7 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 export default function Sidebar() {
   return (
-    <div className="bg-white h-full rounded-2xl p-6 px-14 relative">
+    <div className=" h-full rounded-2xl py-6  relative">
         
         {/* Brand logo */}
         <div className="flex justify-between items-center">
@@ -25,9 +25,9 @@ export default function Sidebar() {
         </div>
 
         {/* Search bar wrapper */}
-        <div className="border flex px-4 py-2 mt-5 gap-2 rounded-full items-center">
+        <div className="border mx-6 bg-transparent flex px-4 py-2 mt-5 gap-2 rounded-full items-center">
           <Image src={searchicon} alt="search-icon" width={30} height={30} className="h-6 w-6" / >
-          <input placeholder ="Search" className="w-full text-lg"/>
+          <input placeholder ="Search" className="w-full text-lg bg-transparent"/>
         </div>
 
         {/* Menu button wrapper */}
@@ -42,7 +42,7 @@ export default function Sidebar() {
         </div>
 
         {/* user wrapper */}
-        <div className="mt-20">
+        <div className="mt-20 mx-6">
           {/* user info */}
           <div className="flex gap-4 mb-4">
             <div className="rouded ">
