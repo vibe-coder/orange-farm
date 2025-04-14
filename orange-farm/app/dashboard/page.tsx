@@ -17,25 +17,25 @@ export default function Dashboard(){
         <div id="#" className="bg-offwhite w-full ">
 
             {/* Header */}
-            <div className="mb-4">
+            <div className="mb-4 p-4 bg-white">
                 <Header/>
             </div>
 
             {/* ------------ Top ------------ */}
-            <div className="grid grid-cols-2 grid-rows-2 gap-4">
+            <div className="grid px-4 grid-cols-2 grid-rows-2 gap-4">
                 <Revenues/>
                 <Lostdeals/>
                 <Quartergoals/>
             </div>
 
             {/* ------------ Middele ------------ */}
-            <div className="pt-4 grid grid-col-2 space-y-4">
+            <div className="pt-4 px-4 grid grid-col-2 space-y-4">
                 <Customers/>
                 <Growth/>
             </div>
 
             {/* ------------ Bottom ------------ */}
-            <div className="pt-4 grid gap-4 grid-col-3">
+            <div className="pt-4 px-4 grid gap-4 grid-col-3">
                 <Chats/>
                 <TopStates/>
                 <NewDeal/>
