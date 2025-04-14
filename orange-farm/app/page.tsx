@@ -14,7 +14,7 @@ export default function Home() {
           <div className=" overflow-x-scroll  snap-center scroll-smooth snap-x 
           no-scrollbar snap-mandatory flex ">
             <div className=" flex justify-end">
-              <div className="w-screen no-scrollbar z-20 p-4 bg-offwhite">
+              <div className="w-screen no-scrollbar z-20 p-0 bg-offwhite">
                 <Dashboard/>
               </div>
             </div>
