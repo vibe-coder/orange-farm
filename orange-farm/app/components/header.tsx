@@ -1,18 +1,8 @@
 "use client"
 
 import logo from "../../public/icons/Logo.svg"
-import userimage from "../../public/icons/Harry.png"
+import userImage from "../../public/icons/Harry.png"
 import Image from "next/image";
-
-// export default function Header(){
-//     return(
-//         <div className="bg-white p-4 rounded-2xl">
-            
-//         </div>
-//     )
-// }
-
-
 
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -31,6 +21,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 
 const settings = ['Profile', 'Account', 'Logout'];
+const user = userImage
 
 function ResponsiveAppBar() {
 
@@ -45,7 +36,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" color="transparent" elevation={0} enableColorOnDark sx={{}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters className='flex justify-between'>
 
@@ -55,14 +46,16 @@ function ResponsiveAppBar() {
 
           
           {/* Profile */}
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0 }} >
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="../../public/icons/Harry.png" />
+                <Avatar alt="Remy Sharp" src="../../public/icons/Harry.png"  />
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: '45px' }}
+              
+              elevation={0}
+              sx={{ mt: '45px', box: 3, borderColor: "error.main"}}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -76,6 +69,7 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
+              
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
