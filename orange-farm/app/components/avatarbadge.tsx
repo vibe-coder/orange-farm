@@ -43,13 +43,15 @@ const SmallAvatar = styled(Avatar)(({ theme }) => ({
   border: `2px solid ${theme.palette.background.paper}`,
 }));
 
+
+
 export default function BadgeAvatars() {
   return (
     <Stack direction="row" spacing={2}>
       {
         customerWithMessage.map((data) => {
           return(
-            <div key={data.key} className='bg-lightorange p-4 rounded-2xl'>
+            <div key={data.key} className='bg-lightorange p-3 rounded-2xl'>
               <StyledBadge
                 overlap="circular"
                 anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
@@ -65,7 +67,7 @@ export default function BadgeAvatars() {
       {
         customerWithNoMessage.map((data) => {
           return(
-            <div key={data.key}  className='p-4'>
+            <div key={data.key}  className='p-3'>
               <Avatar  alt={data.name} src={data.pictureURL}/>
             </div>
           )
