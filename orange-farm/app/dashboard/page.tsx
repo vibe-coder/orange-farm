@@ -10,15 +10,17 @@ import Chats from "../components/chats"
 import TopStates from "../components/topStates"
 import NewDeal from "../components/newdeal"
 import Header from "../components/header"
+import ResponsiveAppBar from "../components/header"
 
 
 export default function Dashboard(){
     return(
-        <div id="#" className="bg-offwhite w-full ">
+        <div id="#" className="bg-offwhite">
 
             {/* Header */}
-            <div className="mb-4 p-4 bg-white">
-                <Header/>
+            <div className="mb-4 px-4 bg-white">
+                {/* <Header/> */}
+                {/* <ResponsiveAppBar/> */}
             </div>
 
             {/* ------------ Top ------------ */}
