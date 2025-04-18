@@ -9,7 +9,7 @@ interface ButtonProps {
 
 export default function Button({id, name, iconURL}: ButtonProps){
     return(
-        <button className="flex py-4 pl-6 md:pl-0 w-full hover:bg-lightorange gap-2">
+        <button className="flex py-4 pl-6 md:pl-3 w-full hover:bg-lightorange gap-2">
             <Image src={iconURL} id={`${id}`} alt="icon" width={30} height={30} className="w-6" />
             {name}
         </button>

@@ -13,21 +13,21 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 export default function DesktopSidebar() {
   return (
-    <div className=" h-full hidden md:block xl:visible rounded-2xl py-6 relative ">
+    <div className=" h-full hidden md:block md:p-6 xl:visible rounded-2xl py-6 relative ">
         
         {/* Brand logo */}
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center md:ml-3">
           <Image src={logo} alt="Orange-farm-logo" width={100} height={100} priority className="w-40" />
 
-          <div className="bg-offwhite hidden rounded-l-xl absolute right-0 p-1 ">
+          <div className="bg-offwhite hidden md:block rounded-l-xl absolute right-0 p-1 ">
             <NavigateBeforeIcon/>
           </div>
         </div>
 
         {/* Search bar wrapper */}
-        <div className="border mx-6 bg-transparent flex px-4 py-2 mt-5 gap-2 rounded-full items-center">
+        <div className="border mx-6 md:mx-0 bg-transparent flex px-4 py-2 mt-5 gap-2 rounded-full items-center md:ml-3">
           <Image src={searchicon} alt="search-icon" width={30} height={30} className="h-6 w-6" / >
-          <input placeholder ="Search" className="w-full text-lg bg-transparent"/>
+          <input placeholder ="Search" className="w-full md:w-48 text-lg bg-transparent"/>
         </div>
 
         {/* Menu button wrapper */}
@@ -42,7 +42,7 @@ export default function DesktopSidebar() {
         </div>
 
         {/* user wrapper */}
-        <div className="mt-20 mx-6">
+        <div className="mt-20 mx-6 md:mx-0">
           {/* user info */}
           <div className="flex gap-4 mb-4">
             <div className="rouded ">
