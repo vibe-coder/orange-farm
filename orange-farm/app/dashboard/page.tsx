@@ -15,13 +15,7 @@ import ResponsiveAppBar from "../components/header"
 
 export default function Dashboard(){
     return(
-        <div id="#" className="bg-offwhite">
-
-            {/* Header */}
-            <div className="mb-4 px-4 bg-white">
-                {/* <Header/> */}
-                {/* <ResponsiveAppBar/> */}
-            </div>
+        <div className="bg-off-white w-screen">
 
             {/* ------------ Top ------------ */}
             <div className="grid px-4 grid-cols-2 grid-rows-2 gap-4">
