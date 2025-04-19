@@ -10,7 +10,7 @@ import DesktopSidebar from "./sidebar/desktop-sidebar";
 
 export default function Home() {
   return (
-    <div className="bg-offwhite text-black w-screen md:p-4 h-lvh overflow-hidden">
+    <div className="text-black bg-offwhite w-screen md:p-4 h-lvh overflow-hidden">
           
       <main className="h-full overflow-scroll no-scrollbar md:flex relative">
           <SwipeSidebar/>
@@ -23,13 +23,11 @@ export default function Home() {
             <ResponsiveAppBar/>
           </div>
 
-          <div className=" overflow-y-scroll  snap-center scroll-smooth snap-x 
-          no-scrollbar snap-mandatory flex ">
-            <div className=" flex justify-end">
-              <div className=" no-scrollbar z-20 p-0 bg-offwhite">
+          <div className="overflow-y-scroll snap-center scroll-smooth snap-x 
+          no-scrollbar snap-mandatory flex md:w-full">
+              <div className=" no-scrollbar overflow-y-scroll z-20 h-auto md:w-full">
                 <Dashboard/>
               </div>
-            </div>
           </div>
       </main>
     </div>
