@@ -3,7 +3,7 @@ import darkorangearrow from "../../public/icons/darkorangearrow.svg"
 
 export default function Lostdeals(){
     return(
-        <div className="bg-white p-4 flex-col m-0 rounded-2xl h-60 gap-4 relative ">
+        <div className="bg-white p-4 flex-col m-0 rounded-2xl h-60 gap-4 relative lg:grow">
             <h1 className="font-semibold text-lg text-textblack pb-8">Lost deals</h1>
 
             <div>
