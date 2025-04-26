@@ -8,7 +8,7 @@ import { Luckiest_Guy } from "next/font/google"
 
 export default function Revenues(){
     return(
-        <div className="bg-white p-4 flex-col rounded-2xl h-60 gap-4 relative ">
+        <div className="bg-white lg:grow p-4 flex-col rounded-2xl h-60 gap-4 relative ">
             <h1 className="font-semibold text-lg text-textblack pb-8">Revenues</h1>
 
             <div>
